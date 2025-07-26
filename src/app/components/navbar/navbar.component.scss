@@ -1,0 +1,18 @@
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #fff;
+    background-color: palevioletred;
+    border-radius: 10px;
+}
+
+
+
+.mr-auto, .mx-auto {
+   
+    margin-left: 50px;
+}

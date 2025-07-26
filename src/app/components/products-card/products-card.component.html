@@ -1,0 +1,53 @@
+
+        <div class="card mb-2">
+  
+      <figure class="productCard">
+        <img [src]="productCard.images[0]" class="defaultImg" [title]="productCard.title" [alt]="productCard.title">
+        <img [src]="productCard.images[1]" class="hoverImg" [title]="productCard.title" [alt]="productCard.title">
+
+        <figcaption>
+            <ul class="icons">
+                <li>
+                   <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
+          <mat-icon>visibility</mat-icon>
+        </button>
+                </li>
+                <li>
+                    <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
+          <mat-icon (click)="onLike($event)">favorite</mat-icon>
+        </button>
+                </li>
+                <li>
+                    <button mat-mini-fab disabled aria-label="Example icon button with a home icon">
+          <mat-icon>comment</mat-icon>
+        </button>
+                </li>
+                 <li>
+                     <button mat-mini-fab disabled aria-label="Example icon button with a home icon" >
+          <mat-icon>thumb_up</mat-icon>
+        </button>
+                </li>
+            </ul>
+
+            <h3 class="cartAdd">
+                Add to cart
+            </h3>
+
+            
+        </figcaption>
+    </figure>
+
+</div>
+
+<div class="productInfo mb-5">
+        <h3 class="m-0">
+            {{productCard.title}}
+        </h3>      
+        <strong class="text-danger">
+            {{productCard.total_price}}
+        </strong> 
+       
+</div>
+ 
+
+   

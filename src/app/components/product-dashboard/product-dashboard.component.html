@@ -1,0 +1,15 @@
+<!-- <div class="text-center">
+    
+<button mat-raised-button color="accent" routerLink="/productCard">View all Products</button>
+
+
+</div> -->
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let product of productArr">
+            <app-products-card [productCard]="product"></app-products-card>
+        </div>
+    </div>
+</div>

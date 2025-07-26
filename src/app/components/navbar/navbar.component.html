@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="home">
+    <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="flipcartLogo" title="flipcartLogo">
+  </a>
+  <button class="navbar-toggler" showNavbar type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="product">Products</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="contact">Contact</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="about">About</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="signup">Sign up</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+    </form>
+
+    <button mat-icon-button class="text-secondary"   aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>search</mat-icon>
+      </button>
+
+    <button mat-icon-button class="text-secondary"   aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+
+        <button mat-icon-button class="text-secondary" aria-label="Example icon button with a vertical three dot icon">
+        <mat-icon><span class="material-symbols-outlined">
+shopping_cart
+</span></mat-icon>
+      </button>
+  </div>
+</nav>

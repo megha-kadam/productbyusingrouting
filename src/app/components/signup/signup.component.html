@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="shopBanner">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.UHlxurQa3E7oIyvBvHZ6GAHaFj?pid=Api&P=0&h=180" alt="shop" title="shop">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="signupForm">
+                 <h1>Create an account</h1>
+            <h3>Enter your details below</h3>
+          <div class="card mb-3">
+            <div class="card-body">
+                  <form #signUpForm="ngForm" (ngSubmit)="onAddUser()">
+                <div class="form-group">
+                    <label for="email">Email <sup class="text-danger">*</sup></label>
+                    <input type="text" required class="form-control" id="email" name="email" ngModel #email="ngModel">
+                </div>
+
+                  <div class="form-group">
+                    <label for="password">Password <sup class="text-danger">*</sup></label>
+                    <input type="text" required class="form-control" id="password" name="password" ngModel #password="ngModel">
+                </div>
+
+                <button mat-raised-button class="btn-block" color="warn">Create Account</button>
+            </form>
+            </div>
+          </div>
+
+          <div class="haveAccount">
+           <h2>
+              <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+        <mat-icon>google_home_devices</mat-icon>
+      </button>
+
+      
+        Sign Up with Google
+           </h2>
+
+           <p>Already have an accout?
+            <strong>
+             <a class="text-danger" href="javascript:;">Log In</a>
+            </strong>
+           </p>
+          </div>
+
+            </div>
+           </div>
+    </div>
+</div>
